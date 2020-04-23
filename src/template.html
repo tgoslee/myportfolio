@@ -30,7 +30,6 @@
   <!-- Follow the HTML instructions to create your stunning portfolio website -->
   <body>
     <div id="top"></div>
-
     <!-- **** Hero Section **** -->
     <div id="hero" class="jumbotron">
       <div class="container">
@@ -44,6 +43,13 @@
         </p>
       </div>
     </div>
+    <div id="navbar">
+      <a href="#top">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+  </div>
+
     <!-- /END Hero Section -->
 
     <!-- **** About Section **** -->
@@ -247,7 +253,141 @@
         </p>
 
       </div>
+
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    particlesJS("top", particlesJSConfig);
+    setTimeout(function() { window.dispatchEvent(new Event('resize')); }, 100);
+  });
+</script>
+    <script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-70px";
+  }
+}
+</script>
+    <script>
+  var particlesJSConfig =
+      {
+
+  "particles": {
+    "number": {
+      "value": 269,
+      "density": {
+        "enable": true,
+        "value_area": 1603.4120608655214
+      }
+    },
+    "color": {
+      "value": "#cc2b5e"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000"
+      },
+      "polygon": {
+        "nb_sides": 11
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 5,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 10,
+        "size_min": 20,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 200,
+      "color": "#ffffff",
+      "opacity": 1,
+      "width": 2
+    },
+    "move": {
+      "enable": true,
+      "speed": 2,
+      "direction": "top",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": false,
+        "mode": "remove"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+}
+</script>
     <!-- /END Footer Section -->
   </body>
 </html>

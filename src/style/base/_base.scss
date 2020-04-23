@@ -6,11 +6,35 @@ body {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
-.particles {
+#navbar {
+  background:linear-gradient(135deg, #cc2b5e, #753a88);
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
+  top: -60px;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+  z-index: 9999;
+   border-bottom: 3px solid white;
 }
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+  font-size: 25px;
+}
+
+#navbar a:hover {
+  background-color: #ffffff;
+  color: black;
+}
+.particles-js-canvas-el {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
