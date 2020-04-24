@@ -43,11 +43,14 @@
         </p>
       </div>
     </div>
-    <div id="navbar">
+    <div class="topnav" id="navbar">
       <a href="#top">Home</a>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
   </div>
 
     <!-- /END Hero Section -->
@@ -388,6 +391,16 @@ function scrollFunction() {
   "retina_detect": true
 }
 </script>
+    <script>
+      function myFunction() {
+  var x = document.getElementById("navbar");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+    </script>
     <!-- /END Footer Section -->
   </body>
 </html>
