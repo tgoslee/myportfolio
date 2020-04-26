@@ -42,14 +42,18 @@ body {
     z-index: 0;
   }
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {display:none;}
   .topnav a.icon {
     float: right;
     display: block;
   }
+  .left{
+    float: left !important;
+  }
 }
+
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {position: fixed;}
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -60,4 +64,9 @@ body {
     display: block;
     text-align: left;
   }
+    .left{
+    float: left !important;
+    display: block;
+}
+
 }
