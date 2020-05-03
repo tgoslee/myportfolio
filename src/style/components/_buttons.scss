@@ -88,6 +88,13 @@
     }
   }
 }
+@media only screen and (max-width: 767px){
+  .cta-btn--resume{
+        display: table;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 /* Arrow Button */
 .up i {
